@@ -1,6 +1,9 @@
-name: "My Workflow"
+name: "Create Release and Publish"
 
-on: pull_request
+on:
+  pull_request:
+    branches:
+      - "releases/**"
 
 jobs:
   create-release:
@@ -25,7 +28,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               tag_name: `app-v${process.env.PACKAGE_VERSION}`,
-              name: `Desktop App v${process.env.PACKAGE_VERSION}`,
+              name: `Testing Tauri App v${process.env.PACKAGE_VERSION}`,
               body: 'Take a look at the assets to download and install this app.',
               draft: true,
               prerelease: false
