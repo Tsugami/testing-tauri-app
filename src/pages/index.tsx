@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Welcome to Testing-Tauri-App! 0.0.1</h1>
+      <h1>Welcome to Testing-Tauri-App! 0.0.2</h1>
 
       <div className="row">
         <div>
